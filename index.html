@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type=text/css href="index.css">
+    <script src="index.js"></script>
     <title>Amnesia</title>
 </head>
 <body>
+    <p id="demo">Good Night!</p>
+
+    <script>
+        if (new Date().getHours() < 12) {
+          document.getElementById("demo").innerHTML = "Good day!";
+        }
+        else if (new Date().getHours() > 12) {
+          document.getElementById("demo").innerHTML = "Good afternoon!";
+        }
+        
+        </script>
+        
     <div class="container">  
 		<form class="contact" action="" method="post">
 			<h3>Check your results</h3>
@@ -64,6 +77,6 @@
 		</form>
 	</div>
 
-<p style="font-style: italic; color: #2196f3; font-size: 18px; text-align: center; margin-top: 50px; margin-bottom: 20px;">Contact Us</a></p>
+<p style="font-style: italic; color: #e6e9ec; font-size: 18px; text-align: center; margin-top: 50px; margin-bottom: 20px;">Contact Us</a></p>
 </body>
 </html>
