@@ -1,0 +1,141 @@
+Parametrised
+this project is parameterised
+string parameter
+choice parameter 
+Build - execute shell 
+echo "hey $Name , you chose , $City , clicked , $Ok 
+Apply save 
+Console o/p 
+
+Java 
+Build step - execute shell 
+Terminal 
+touch suhani.java 
+Hello World prog 
+javac suhani.java 
+java suhani.java 
+
+
+
+Computer var lib jenkins workspace free style projectname 
+Open terminal 
+Cd ..
+sudo cp suhani.java /workspace path 
+Class file 
+Check in free style java files
+In execute shell 
+sudo javac suhani.java 
+java suhani
+Run in workspace 
+sudo javac
+ for granting permission 
+ sudo Chmod 777 filename 
+
+DOCKER 
+73  docker ps
+   74  docker search mongo
+   75  docker pull kope/mongodb
+   76  docker run suhani
+   77  docker login
+   78  docker run suhani
+   79  docker run hello-world
+   80  docker ps -all
+   81  docker stop 5618136d029b
+   82  docker ps -all
+   83  docker ps -a
+   84  docker run hello-world
+   85  docker run mysql
+   86  docker ps -all
+   87  docker stop 4eaaff315ce9
+   88  docker restart 4eaaff315ce9
+   89  docker ps -all
+   90  docker rename gifted_pike suhani
+   91  docker rename gifted_pike suhani1
+   92  docker ps -all
+   93  docker logs suhani1
+   94  docker rm suhani1
+   95  docker ps -all
+   96  docker images
+   97  docker rmi c2c2eba5ae85
+   98  docker images
+   99  docker logs --help
+  —---------------------------------------------------
+  101  docker create --name raj -p 80:80 hello-world
+  102  docker ps -all
+  103  docker ps -a
+  104  docker container start raj
+  105  docker container run  raj
+  106  docker container run feb5d9fea6a5
+  107  docker container ls
+  108  docker container inspect raj
+  109  docker container kill
+  110  docker container kill raj
+  111  docker container rm  raj
+  112  docker container ls
+  113  docker ps -a
+
+
+Maeven
+https://github.com/devopshint/java-app-with-maven
+sudo apt install maven
+mvn --version
+install from plugins
+restart
+new proj
+github project : paste link
+in source code mgmt : 
+github link .git
+credentials
+branch : main
+build whenever snap  github hook higher
+del workspace
+root pom : my-app/pom.xml
+run regardless build
+
+Github
+git config --global user.name "suhanidesale"
+  463  git config --global user.email "deslesuhani02@gmail.com"
+  464  git config --global --list
+  465  cat ~/.gitconfig
+ mkdir github_trial
+  473  cd github_trial
+  474  git init
+  475  git status
+  476  git remote add origin https://github.com/suhanidesale/devops.git
+  477  git remote -v
+  478  git status
+  479  git add .
+  480  git commit -m "intial commit"
+  481  git push origin master
+  482  git status
+  483  git add .
+  484  git commit -m "new"
+  485  git push origin master
+  486  git branch new-branch
+  487  git checkout new-branch
+  488  git status
+  489  git add .
+  490  git commit -m "branch"
+  491  git status
+  492  git add .
+  493  git commit -m "branch"
+  494  git push origin master
+  495  git push origin new-branch
+  496  git checkout master
+  497  git merge branch
+  498  git merge new-branch
+  499  git add .
+  500  git status
+  501  git pull
+  502  git pull origin master
+
+Jenkins shell script
+make shelljen.sh
+content
+#!/bin/bash
+echo "HI"
+sudo chmod 777 shelljen.sh
+./shelljen.sh
+hi should come
+in execute shell
+file path
