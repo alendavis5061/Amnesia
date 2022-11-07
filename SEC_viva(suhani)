@@ -1,0 +1,135 @@
+Nmap
+sudo nmap system ip to scan through ip add
+nmap -v linuxhint.com scan host name and ip address
+-v more elaborative details
+nmap system ip-100
+sudo nmap -sA ip - to check if the local host is using any firewall
+-sp - to scan list of all live and up hosts 
+sudo nmap -F ip - fast scan
+--iflists - routes and host interface info
+-sn - display all active nodes
+-T5 - display ports of specific node
+-A display os of specific node
+-sP ping scanning
+-p T:80 tcp scanning
+-sU -u udp scanning 
+
+Cryptography 
+Cryptography is the process of hiding or coding information so that only the person a message was intended for can read it. The art of cryptography has been used to code messages for thousands of years and continues to be used in bank cards, computer passwords, and ecommerce.
+
+cryptographic key generation, digital signing, verification to protect data privacy, web browsing on internet and to protect confidential transactions such as credit card and debit card transactions.
+
+Types
+Symmetric Key Cryptography:
+It is an encryption system where the sender and receiver of message use a single common key to encrypt and decrypt messages. Symmetric Key Systems are faster. Eg DES
+
+Hash Functions:
+There is no usage of any key in this algorithm. A hash value with fixed length is calculated as per the plain text which makes it impossible for contents of plain text to be recovered. Many operating systems use hash functions to encrypt passwords.
+
+Asymmetric Key Cryptography:
+Under this system a pair of keys is used to encrypt and decrypt information. A public key is used for encryption and a private key is used for decryption. Public key and Private Key are different. Even if the public key is known by everyone the intended receiver can only decode it because he alone knows the private key.
+enc - rec public key
+decrypt - rec private key
+
+Steganography 
+A steganography technique involves hiding sensitive information within an ordinary, non-secret file or message, so that it will not be detected. The sensitive information will then be extracted from the ordinary file or message at its destination, thus avoiding detection. Steganography is an additional step that can be used in conjunction with encryption in order to conceal or protect data.
+
+Steganography is a means of concealing secret information within (or even on top of) an otherwise mundane, non-secret document or other media to avoid detection. It comes from the Greek words steganos, which means “covered” or “hidden,” and graph, which means “to write.” Hence, “hidden writing.”
+types
+text
+image
+steganography to hide text, video, images, or even audio data
+
+1. Text Steganography − There is steganography in text files, which entails secretly storing information. In this method, the hidden data is encoded into the letter of each word. 
+
+2. Image Steganography − The second type of steganography is image steganography, which entails concealing data by using an image of a different object as a cover. Pixel intensities are the key to data concealment in image steganography.
+
+Since the computer description of an image contains multiple bits, images are frequently used as a cover source in digital steganography.
+
+The various terms used to describe image steganography include:
+
+Cover-Image - Unique picture that can conceal data.
+Message - Real data that you can mask within pictures. The message may be in the form of standard text or an image.
+Stego-Image − A stego image is an image with a hidden message.
+Stego-Key - Messages can be embedded in cover images and stego-images with the help of a key, or the messages can be derived from the photos themselves.
+3. Audio Steganography − It is the science of hiding data in sound. Used digitally, it protects against unauthorized reproduction. Watermarking is a technique that encrypts one piece of data (the message) within another (the "carrier"). Its typical uses involve media playback, primarily audio clips.
+
+4. Video Steganography − Video steganography is a method of secretly embedding data or other files within a video file on a computer. Video (a collection of still images) can function as the "carrier" in this scheme. Discrete cosine transform (DCT) is commonly used to insert values that can be used to hide the data in each image in the video, which is undetectable to the naked eye. Video steganography typically employs the following file formats: H.264, MP4, MPEG, and AVI.
+
+5. Network or Protocol Steganography − It involves concealing data by using a network protocol like TCP, UDP, ICMP, IP, etc., as a cover object. Steganography can be used in the case of covert channels, which occur in the OSI layer network model
+
+egs
+Writing with invisible ink
+Embedding text in a picture (like an artist hiding their initials in a painting they’ve done)
+Backward masking a message in an audio file (remember those stories of evil messages recorded backward on rock and roll records?)
+Concealing information in either metadata or within a file header
+Hiding an image in a video, viewable only if the video is played at a particular frame rate
+Embedding a secret message in either the green, blue, or red channels of an RRB image
+
+diff. 
+ste - conceal communication
+comm security 
+optional step
+once hidden info decoded data can be used by anyone
+crypt - information secure
+data protection 
+necessary 
+decode only if have key
+
+Symmetric 
+Encryption time public key 
+For 10 no of public key -n
+For symettric no of keys n*n-1 
+Deffih halman - used to establish secret key while exchanging data over public network
+2 primes g p 1st party
+A = g^a mod p 2nd party sends to 1st
+1st party does same B=p^b mod g
+B^a mod p same A
+both parties same ans
+
+uses 
+encryption, pass authenticed agreement prevent man in middle when 2 parties share pass
+
+no prior knowledge sender and receiver
+sharing safe
+not used for asymmetric 
+
+Key agremeent 
+
+2 or more party establish shared enc keyto enc sign data 
+solve problems of confidentiality est sec key between parties without letting unautho party interrupt
+eg diffie helman rsa etc
+man jn the middle attack why you 
+attacker intercept existing convo or data transfer by pretending to be a legitimate participant 
+goal to retrive confi data bank acc details etc
+phases
+interception fake wifi without pass
+ip spoofing dns arp
+altering ip packets
+add resolution protocal uses false arp msgs to link to mac
+dns spoof - dns cache poisoning altering dns server
+dns - domain name servers contain public domains and ip address
+trans domain name into ip
+decryption 
+
+Layers and protocol header format 
+tcp
+app - snmp http , https , ssh
+ trans internet network access
+Layer wise attacks
+Dos attack 
+types of attacks
+trojan horse - prgn appears useful but not
+malware - self replicating, used to disable comp unautho
+man in middle - 
+packet sniffer
+ip spoofing
+dos - kills victim network 3 parts
+bw flooding
+vulnerability attack
+connection flooding 
+virus cant run itself 
+worm
+
+Cia threats against
+Integrity
